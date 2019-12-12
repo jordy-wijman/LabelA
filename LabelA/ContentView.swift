@@ -9,8 +9,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var model = StarshipListViewModel()
+    
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            List(model.starships) { starship in
+                NavigationLink(destination: DetailView(viewModel: starship)) {
+                    VStack(alignment: .leading) {
+                        Text(starship.title).lineLimit(nil)
+                        Text(starship.description).foregroundColor(.secondary).lineLimit(nil)
+                    }
+                }
+            }
+        .navigationBarTitle("Starships")
+        }
+    }
+}
+
+struct DetailView: View {
+    let viewModel: StarshipViewModel
+    
+    var body: some View {
+        VStack(alignment: .leading) {
+            Text(viewModel.starship.name)
+            Text(viewModel.starship.model)
+            Text(viewModel.starship.manufacturer)
+        }
     }
 }
 

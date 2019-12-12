@@ -15,6 +15,12 @@
 		D227389423A29CC800459BBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D227389223A29CC800459BBE /* LaunchScreen.storyboard */; };
 		D227389F23A29CC900459BBE /* LabelATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D227389E23A29CC900459BBE /* LabelATests.swift */; };
 		D22738AA23A29CC900459BBE /* LabelAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22738A923A29CC900459BBE /* LabelAUITests.swift */; };
+		D22738B923A29DE300459BBE /* StarWarsWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22738B823A29DE300459BBE /* StarWarsWebservice.swift */; };
+		D22738BD23A2A05C00459BBE /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22738BC23A2A05C00459BBE /* Character.swift */; };
+		D22738BF23A2A06700459BBE /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22738BE23A2A06700459BBE /* Planet.swift */; };
+		D22738C123A2A07300459BBE /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22738C023A2A07300459BBE /* Starship.swift */; };
+		D22738C423A2A84B00459BBE /* StarshipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22738C323A2A84B00459BBE /* StarshipViewModel.swift */; };
+		D22738C623A2A8E400459BBE /* StarshipListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22738C523A2A8E400459BBE /* StarshipListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		D22738A523A29CC900459BBE /* LabelAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LabelAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D22738A923A29CC900459BBE /* LabelAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelAUITests.swift; sourceTree = "<group>"; };
 		D22738AB23A29CC900459BBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D22738B823A29DE300459BBE /* StarWarsWebservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsWebservice.swift; sourceTree = "<group>"; };
+		D22738BC23A2A05C00459BBE /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		D22738BE23A2A06700459BBE /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		D22738C023A2A07300459BBE /* Starship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starship.swift; sourceTree = "<group>"; };
+		D22738C323A2A84B00459BBE /* StarshipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipViewModel.swift; sourceTree = "<group>"; };
+		D22738C523A2A8E400459BBE /* StarshipListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,9 @@
 		D227388623A29CC500459BBE /* LabelA */ = {
 			isa = PBXGroup;
 			children = (
+				D22738C223A2A83100459BBE /* ViewModels */,
+				D22738BB23A2A04400459BBE /* Models */,
+				D22738B723A29DCE00459BBE /* Networking */,
 				D227388723A29CC500459BBE /* AppDelegate.swift */,
 				D227388923A29CC500459BBE /* SceneDelegate.swift */,
 				D227388B23A29CC500459BBE /* ContentView.swift */,
@@ -134,6 +149,33 @@
 				D22738AB23A29CC900459BBE /* Info.plist */,
 			);
 			path = LabelAUITests;
+			sourceTree = "<group>";
+		};
+		D22738B723A29DCE00459BBE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D22738B823A29DE300459BBE /* StarWarsWebservice.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D22738BB23A2A04400459BBE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D22738BC23A2A05C00459BBE /* Character.swift */,
+				D22738BE23A2A06700459BBE /* Planet.swift */,
+				D22738C023A2A07300459BBE /* Starship.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D22738C223A2A83100459BBE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D22738C323A2A84B00459BBE /* StarshipViewModel.swift */,
+				D22738C523A2A8E400459BBE /* StarshipListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,8 +310,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D227388823A29CC500459BBE /* AppDelegate.swift in Sources */,
+				D22738C123A2A07300459BBE /* Starship.swift in Sources */,
 				D227388A23A29CC500459BBE /* SceneDelegate.swift in Sources */,
+				D22738B923A29DE300459BBE /* StarWarsWebservice.swift in Sources */,
+				D22738C423A2A84B00459BBE /* StarshipViewModel.swift in Sources */,
+				D22738C623A2A8E400459BBE /* StarshipListViewModel.swift in Sources */,
+				D22738BF23A2A06700459BBE /* Planet.swift in Sources */,
 				D227388C23A29CC500459BBE /* ContentView.swift in Sources */,
+				D22738BD23A2A05C00459BBE /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +484,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"LabelA/Preview Content\"";
+				DEVELOPMENT_TEAM = 988G8867D8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = LabelA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -455,6 +504,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"LabelA/Preview Content\"";
+				DEVELOPMENT_TEAM = 988G8867D8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = LabelA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
